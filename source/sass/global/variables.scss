@@ -1,0 +1,12 @@
+:root {
+  --basic-white: #ffffff;
+  --basic-black: #000000;
+  --basic-grey: #f2f2f2;
+  --basic-green: #2aab6d;
+  --basic-red: #d22856;
+}
+
+$font-family-basic: "Montserrat", "Arial", sans-serif;
+$desktop-width: 1024px; // от 1024px и выше
+$tablet-width: 768px; // 768px - 1023px;
+$mobile-width: 320px; // 320px - 767px;

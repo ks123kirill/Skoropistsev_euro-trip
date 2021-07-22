@@ -4,30 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Путешествие по Европе</title>
+    <link rel="preload" href="fonts/montserrat-bold.woff2" as="font">
+    <link rel="preload" href="fonts/montserrat-semibold.woff2" as="font">
+    <link rel="preload" href="fonts/montserrat-medium.woff2" as="font">
+    <link rel="preload" href="fonts/montserrat-medium.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
 
   <body class="page-body">
-    <header class="main-header">
-      <div class="main-header__wrapper">
-        <div class="main-header__logo logo">
-          <a class="logo__link" href="#">Way</a>
-        </div>
-        <nav class="main-header__nav main-nav">
-          <button class="main-nav__toggle button" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">О путешествии</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Цены</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">+7 (499) -784-684-46</a>
-            </li>
-          </ul>
-        </nav>
+    <header class="main-header wrapper">
+      <div class="main-header__logo logo">
+        <a class="logo__link" href="#">
+          <svg width="58" height="22" viewBox="0 0 58 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M27.7339 0L22.0582 17.0732H17.7457L13.9289 5.51219L9.98817 17.0732H5.70045L0 0H4.1638L8.07976 12L12.1692 0H15.8869L19.8524 12.0976L23.8923 0H27.7339Z" fill="#141517"/>
+            <path d="M34.0886 3.7561C36.154 3.7561 37.7402 4.2439 38.8473 5.21951C39.9543 6.17886 40.5078 7.63414 40.5078 9.58536V17.0732H36.8893V15.439C36.1623 16.6585 34.8074 17.2683 32.8246 17.2683C31.8002 17.2683 30.9079 17.0976 30.1479 16.7561C29.4043 16.4146 28.8343 15.9431 28.4378 15.3415C28.0412 14.7398 27.8429 14.0569 27.8429 13.2927C27.8429 12.0732 28.3056 11.1138 29.2309 10.4146C30.1727 9.71545 31.6184 9.36585 33.5681 9.36585H36.6414C36.6414 8.53658 36.3853 7.90244 35.8731 7.46342C35.3609 7.00813 34.5926 6.78049 33.5681 6.78049C32.8577 6.78049 32.1554 6.89431 31.4615 7.12195C30.784 7.33333 30.2057 7.62602 29.7265 8L28.3386 5.34146C29.0656 4.8374 29.9331 4.44715 30.941 4.17073C31.9654 3.89431 33.0146 3.7561 34.0886 3.7561ZM33.7912 14.7073C34.4521 14.7073 35.0387 14.561 35.5509 14.2683C36.0631 13.9593 36.4266 13.5122 36.6414 12.9268V11.5854H33.9895C32.4033 11.5854 31.6102 12.0976 31.6102 13.122C31.6102 13.6098 31.8002 14 32.1802 14.2927C32.5768 14.5691 33.1138 14.7073 33.7912 14.7073Z" fill="#141517"/>
+            <path d="M57 3.95122L50.9774 17.878C50.366 19.3902 49.6059 20.4553 48.6972 21.0732C47.8049 21.6911 46.7227 22 45.4504 22C44.7564 22 44.0707 21.8943 43.3933 21.6829C42.7158 21.4715 42.1623 21.1789 41.7327 20.8049L43.1454 18.0976C43.4429 18.3577 43.7816 18.561 44.1616 18.7073C44.5582 18.8537 44.9465 18.9268 45.3265 18.9268C45.8552 18.9268 46.2848 18.7967 46.6153 18.5366C46.9457 18.2927 47.2432 17.878 47.5075 17.2927L47.5571 17.1707L41.7823 3.95122H45.7726L49.5151 12.8537L53.2823 3.95122H57Z" fill="#141517"/>
+            <path d="M57.0173 3.9502L50.9946 17.877C50.3833 19.3892 49.6232 20.4543 48.7145 21.0721C47.8222 21.69 46.74 21.999 45.4677 21.999C44.7737 21.999 44.088 21.8933 43.4106 21.6819C42.7331 21.4705 42.1796 21.1778 41.75 20.8039L43.1627 18.0965C43.4601 18.3567 43.7989 18.5599 44.1789 18.7063C44.5754 18.8526 44.9637 18.9258 45.3438 18.9258C45.8725 18.9258 46.3021 18.7957 46.6326 18.5356C46.963 18.2917 47.2604 17.877 47.5248 17.2917L47.5744 17.1697L49.5323 12.8526L53.2996 3.9502H57.0173Z" fill="#FE7865"/>
+          </svg>
+        </a>
       </div>
+      <nav class="main-header__nav main-nav">
+        <button class="main-nav__toggle button visually-hidden" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">О путешествии</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Цены</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">+7 (499) -784-684-46</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main class="page-main">
@@ -112,13 +121,13 @@
                 <img class="tabs__img" src="#" alt="">
               </div>
 
-              <blockquote class="reviews__blockquote">
+              <blockquote class="tabs__review review">
                 <p class="review__title">Отзывы</p>
-                <h3 class="reviews__author">Маришка</h3>
+                <h3 class="review__author">Маришка</h3>
                 <div>
                   <img class="review__img" src="" alt="">
                 </div>
-                <p class="reviews__text">Замечательный курорт, обязательно стоит посетить. В следующий раз возьму с собой сестру, чтобы тоже смогла вкусить все красоты природы :)</p>
+                <p class="review__text">Замечательный курорт, обязательно стоит посетить. В следующий раз возьму с собой сестру, чтобы тоже смогла вкусить все красоты природы :)</p>
               </blockquote>
             </li>
 
@@ -133,13 +142,13 @@
                 <img class="tabs__img" src="#" alt="">
               </div>
 
-              <blockquote class="reviews__blockquote">
+              <blockquote class="tabs__review review">
                 <p class="review__title">Отзывы</p>
-                <h3 class="reviews__author">Михаил Кузьмин</h3>
+                <h3 class="review__author">Михаил Кузьмин</h3>
                 <div>
                   <img class="review__img" src="" alt="">
                 </div>
-                <p class="reviews__text">Я бы сказал необычное старое здание. В архитектуре я не разбираюсь, но подъем в гору был очень веселым так как люди оказались легкими и заводными. Красота природы впечатлила, особенно после долгого пути в гору.</p>
+                <p class="review__text">Я бы сказал необычное старое здание. В архитектуре я не разбираюсь, но подъем в гору был очень веселым так как люди оказались легкими и заводными. Красота природы впечатлила, особенно после долгого пути в гору.</p>
               </blockquote>
             </li>
 
@@ -147,20 +156,20 @@
               <div class="tabs__block">
                 <h3 class="tabs__title">Черногория</h3>
                 <p class="tabs__text">Черногория удивит нас самым большим в Европе каньоном реки Тара, который в некоторых местах высотой берегов доходит до 1300 метров, а шириной не превышает трех. При этом длина каньона составляет 80 км. </p>
-                <a class="tabs__link" href="#">купить тур сейчас</a>
+                <a class="sale-link tabs__link" href="#">купить тур сейчас</a>
               </div>
 
               <div class="tabs__block">
                 <img class="tabs__img" src="#" alt="">
               </div>
 
-              <blockquote class="reviews__blockquote">
+              <blockquote class="tabs__review review">
                 <p class="review__title">Отзывы</p>
-                <h3 class="reviews__author">Анастасия Мей</h3>
+                <h3 class="review__author">Анастасия Мей</h3>
                 <div>
                   <img class="review__img" src="" alt="">
                 </div>
-                <p class="reviews__text">Неописуемой красоты каньон! Ничего прекраснее в жизни не видела, разве что в фильмах :) Всем советую</p>
+                <p class="review__text">Неописуемой красоты каньон! Ничего прекраснее в жизни не видела, разве что в фильмах :) Всем советую</p>
               </blockquote>
             </li>
 
@@ -168,20 +177,20 @@
               <div class="tabs__block">
                 <h3 class="tabs__title">Хорватия</h3>
                 <p class="tabs__text">В Хорватии мы посетим необычайную пещеру названную Бередине. Ее подземный мир увлечет вас на 80-ти метровую глубину через 5 освещенных залов, украшенных удивительными нерукотворными скульптурами —  сталактитами и сталагмитами —  формировавшимися тысячи и тысячи лет.</p>
-                <a class="tabs__link"href="#">купить тур сейчас</a>
+                <a class="sale-link tabs__link"href="#">купить тур сейчас</a>
               </div>
 
               <div class="tabs__block">
                 <img class="tabs__img" src="#" alt="">
               </div>
 
-              <blockquote class="reviews__blockquote">
+              <blockquote class="tabs__review review">
                 <p class="review__title">Отзывы</p>
-                <h3 class="reviews__author-name">Владимир Мулицин</h3>
+                <h3 class="review__author-name">Владимир Мулицин</h3>
                 <div>
                   <img class="review__img" src="" alt="">
                 </div>
-                <p class="reviews__text">Мы поехали всей семьей, я, моя жена и родители. Пещера просто незабываема! А то, что все это формировалось тысячелетиями, мега необычно. Первоначально даже не верилось, но натур ни с чем не спутать по итогу :)</p>
+                <p class="review__text">Мы поехали всей семьей, я, моя жена и родители. Пещера просто незабываема! А то, что все это формировалось тысячелетиями, мега необычно. Первоначально даже не верилось, но натур ни с чем не спутать по итогу :)</p>
               </blockquote>
             </li>
           </ul>
@@ -189,92 +198,94 @@
       </section>
 
       <section class="price">
-        <div>
-          <h2>Цены</h2>
-          <p>Специально для Вас  мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших потребностей и возможностей. Выберите для себя лучший вариант отпуска и отдохните на все 100%! </p>
-          <p>Свяжитесь с нами</p>
-          <a href="#">+7 (499) -784-684-46</a>
+        <div class="price__promo promo-price">
+          <h2 class="promo-price__heading">Цены</h2>
+          <p class="promo-price__text">Специально для Вас  мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших потребностей и возможностей. Выберите для себя лучший вариант отпуска и отдохните на все 100%! </p>
+          <p class="promo-price__connect">Свяжитесь с нами</p>
+          <a class="promo-price__link" href="#">+7 (499) -784-684-46</a>
         </div>
 
         <ul class="price__list">
           <li class="price__item item-price">
-            <h3 class="price">Комплексный</h3>
-            <p>$1999</p>
-            <p>Ознакомьтесь с перечнем того, что входит в данный пакет </p>
-            <ul>
-              <li>Разработанный маршрут с гидом группы</li>
-              <li>Перелет, трансфер и проживание в отелях</li>
-              <li>Завтраки, ужины в отелях и ланчи на природе</li>
-              <li>
-                <p>Экскурсии по удивительно красивым местам Европы</p>
-                <a href="#">купить тур сейчас</a>
+            <h3 class="item-price__title">Комплексный</h3>
+            <p class="item-price__cost">$1999</p>
+            <p class="item-price__info">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
+            <ul class="item-price__list">
+              <li class="item-price__point">Разработанный маршрут с гидом группы</li>
+              <li class="item-price__point">Перелет, трансфер и проживание в отелях</li>
+              <li class="item-price__point">Завтраки, ужины в отелях и ланчи на природе</li>
+              <li class="item-price__point">
+                <p class="item-price__text">Экскурсии по удивительно красивым местам Европы</p>
+                <a class="sale-link item-price__point-link" href="#">купить тур сейчас</a>
               </li>
             </ul>
           </li>
 
-          <li class="price__item">
-            <h3>Экономный</h3>
-            <p>$1399</p>
-            <p>Ознакомьтесь с перечнем того, что входит в данный пакет </p>
-            <ul>
-              <li>Разработанный маршрут с гидом группы</li>
-              <li>Перелет и трансфер</li>
-              <li>Проживание в хостелах при отелях</li>
-              <li>Только завтраки в отелях</li>
-              <li>
-                <p>Экскурсии по удивительно красивым местам Европы</p>
-                <a href="#">купить тур сейчас</a>
+          <li class="price__item item-price">
+            <h3 class="item-price__title">Экономный</h3>
+            <p class="item-price__cost">$1399</p>
+            <p class="item-price__info">Ознакомьтесь с перечнем того, что входит в данный пакет </p>
+            <ul class="item-price__list">
+              <li class="item-price__point">Разработанный маршрут с гидом группы</li>
+              <li class="item-price__point">Перелет и трансфер</li>
+              <li class="item-price__point">Проживание в хостелах при отелях</li>
+              <li class="item-price__point">Только завтраки в отелях</li>
+              <li class="item-price__point">
+                <p class="item-price__text">Экскурсии по удивительно красивым местам Европы</p>
+                <a class="sale-link item-price__point-link" href="#">купить тур сейчас</a>
               </li>
             </ul>
           </li>
         </ul>
       </section>
 
-      <section>
-        <h2>Форма заявки для обратной связи</h2>
-        <form action="https://echo.htmlacademy.ru" method="POST">
-          <p>У Вас остались вопросы?</p>
-          <p>Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
-          <label>
-            <input type="tel" placeholder="* +7 Введите 10 цифр номера">
+      <section class="main-form">
+        <h2 class="visually-hidden">Форма заявки для обратной связи</h2>
+        <form class="main-form form" action="https://echo.htmlacademy.ru" method="POST">
+          <p class="form__text">У Вас остались вопросы?</p>
+          <p class="form__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
+          <label class="form__label">
+            <input class="form__input form__input--phone" type="tel" placeholder="* +7 Введите 10 цифр номера">
           </label>
-          <label>
-            <input type="email" placeholder="E-mail">
+          <label class="form__label">
+            <input class="form__input form__input--email"type="email" placeholder="E-mail">
           </label>
-          <button type="submit">Отправить</button>
+          <button class="button button--submit form__button" type="submit">Отправить</button>
         </form>
       </section>
     </main>
 
     <footer class="main-footer">
-      <section>
-        <h2>Следующие путишествия</h2>
-        <ul>
-          <li>Марсель</li>
-          <li>Ним</li>
-          <li>Монпелье</li>
-          <li>Барселона</li>
-          <li>Пальма</li>
-          <li>Сардиния</li>
-          <li>Палермо</li>
-          <li>Катания</li>
-          <li>Неаполь</li>
-          <li>Рим</li>
-          <li>Корс</li>
-          <li>Ницца</li>
-          <li>Монако</li>
-          <li>Динь-ле-Бен</li>
-          <li>Гренобль</li>
+      <section сlass="footer-trips main-footer__trips">
+        <h2 class="footer-trips__heading">Следующие путешествия</h2>
+        <ul class="footer-trips__list">
+          <li class="footer-trips__item">Марсель</li>
+          <li class="footer-trips__item">Ним</li>
+          <li class="footer-trips__item">Монпелье</li>
+          <li class="footer-trips__item">Барселона</li>
+          <li class="footer-trips__item">Пальма</li>
+          <li class="footer-trips__item">Сардиния</li>
+          <li class="footer-trips__item">Палермо</li>
+          <li class="footer-trips__item">Катания</li>
+          <li class="footer-trips__item">Неаполь</li>
+          <li class="footer-trips__item">Рим</li>
+          <li class="footer-trips__item">Корс</li>
+          <li class="footer-trips__item">Ницца</li>
+          <li class="footer-trips__item">Монако</li>
+          <li class="footer-trips__item">Динь-ле-Бен</li>
+          <li class="footer-trips__item">Гренобль</li>
         </ul>
       </section>
-      <section>
-        <h2>Наши контакты</h2>
-        <a href="#">puteshestviemechta@gmail.ru</a>
-        <a href="#">+7 (499) -784-684-46</a>
+
+      <section class="main-footer__contacts contacts">
+        <h2 class="contacts__heading">Наши контакты</h2>
+        <a class="contacts__link contacts__link--email" href="#">puteshestviemechta@gmail.ru</a>
+        <a class="contacts__link contacts__link--phone" href="#">+7 (499) -784-684-46</a>
       </section>
-      <section>
-        <h2>Корпоративные путешествия</h2>
-        <p>Также вы можете заказать индивидуальное путешествие под вашу компанию. Подобные туры очень сближают компанию, помогают поддерживать корпоративный дух, а также являются оличным времяпрепровождением</p>
+
+      <section class="main-footer__corporate corporate">
+        <h2 class="corporate__heading">Корпоративные путешествия</h2>
+        <p class="corporate__text">Также вы можете заказать индивидуальное путешествие под вашу компанию. Подобные туры очень сближают компанию, помогают поддерживать корпоративный дух, а также являются оличным времяпрепровождением</p>
       </section>
     </footer>
   </body>

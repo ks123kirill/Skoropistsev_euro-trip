@@ -1,0 +1,13 @@
+.main-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+
+.main-nav__item {
+  margin-right: 10px;
+}
+///////////

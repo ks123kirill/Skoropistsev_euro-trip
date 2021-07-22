@@ -1,9 +1,11 @@
 :root {
   --basic-white: #ffffff;
-  --basic-black: #000000;
-  --basic-grey: #f2f2f2;
-  --basic-green: #2aab6d;
-  --basic-red: #d22856;
+  --basic-blacken: rgba(20, 21, 23, 1);
+  --basic-black: rgba(44, 46, 63, 1);
+  --basic-orange: rgba(254, 120, 101, 1);
+  --basic-cream: rgba(251, 248, 248, 1);
+
+  --special-orange: rgba(241, 125, 75, 1);
 }
 
 $font-family-basic: "Montserrat", "Arial", sans-serif;

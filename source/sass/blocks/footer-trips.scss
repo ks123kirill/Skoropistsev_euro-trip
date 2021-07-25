@@ -1,0 +1,15 @@
+.footer-trips__heading {
+  @include footer-heading();
+}
+
+.footer-trips__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  list-style: none;
+}
+
+.footer-trips__item {
+  @include footer-text();
+}
+
+//////////

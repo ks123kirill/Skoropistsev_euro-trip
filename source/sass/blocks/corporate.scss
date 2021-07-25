@@ -1,0 +1,9 @@
+.corporate__heading {
+  @include footer-heading();
+}
+
+.corporate__text {
+  @include footer-text();
+}
+
+///////

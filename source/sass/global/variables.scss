@@ -8,6 +8,7 @@
   --special-orange: rgba(241, 125, 75, 1);
   --special-grey: rgb(190, 194, 204);
   --special-greyen: rgba(20, 21, 23, 0.5);
+  --special-grey-lighten: rgba(215, 217, 223, 1);
 }
 
 $font-family-basic: "Montserrat", "Arial", sans-serif;
@@ -20,6 +21,8 @@ $mobile-width: 320px; // 320px - 767px;
   font-size: 18px;
   line-height: 32px;
   color: var(--basic-blacken);
+  padding: 0;
+  margin: 0;
 }
 
 @mixin footer-text() {
@@ -27,6 +30,8 @@ $mobile-width: 320px; // 320px - 767px;
   font-size: 14px;
   line-height: 17px;
   color: var(--special-greyen);
+  padding: 0;
+  margin: 0;
 }
 
 //////

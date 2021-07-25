@@ -1,7 +1,28 @@
 .main-footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 95px;
+  padding-bottom: 80px;
+  box-sizing: border-box;
   outline: #2d0bc7 solid 5px;
   outline-offset: -5px;
-  padding-bottom: 80px;
+}
+
+@media (max-width: $desktop-width - 1px) {
+  .main-footer {
+    grid-template-columns: 1fr 1fr;
+    padding-top: 40px;
+  }
+
+  .main-footer__corporate {
+    grid-column: 1/-1;
+  }
+}
+
+@media (max-width: $tablet-width - 1px) {
+  .main-footer {
+    grid-template-columns: 1fr;
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
 }

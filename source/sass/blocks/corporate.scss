@@ -1,9 +1,27 @@
+.corporate {
+  text-align: left;
+  padding-left: 70px;
+  // outline: 5px solid aquamarine;
+  // outline-offset: -5px;
+}
+
 .corporate__heading {
   @include footer-heading();
+  padding-bottom: 20px;
 }
 
 .corporate__text {
   @include footer-text();
+}
+
+@media (max-width: $desktop-width - 1px) {
+  .corporate {
+    text-align: center;
+    border-top: 1px solid var(--special-grey-lighten);
+    padding-left: 0;
+    padding-top: 30px;
+    margin-top: 30px;
+  }
 }
 
 ///////

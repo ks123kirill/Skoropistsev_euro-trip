@@ -6,7 +6,6 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 1170px;
   min-height: 100px;
   outline: rgb(50, 160, 50) solid 5px;
   outline-offset: -5px;
@@ -16,6 +15,11 @@
   .main-header {
     background-color: var(--basic-red);
     min-height: 50px;
+    align-items: flex-start;
+  }
+
+  .main-header__logo {
+    margin-top: 15px;
   }
 }
 

@@ -1,4 +1,7 @@
 .main-footer {
-  outline: rgb(45, 11, 199) solid 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  outline: #2d0bc7 solid 5px;
   outline-offset: -5px;
+  padding-bottom: 80px;
 }

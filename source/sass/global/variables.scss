@@ -6,9 +6,27 @@
   --basic-cream: rgba(251, 248, 248, 1);
 
   --special-orange: rgba(241, 125, 75, 1);
+  --special-grey: rgb(190, 194, 204);
+  --special-greyen: rgba(20, 21, 23, 0.5);
 }
 
 $font-family-basic: "Montserrat", "Arial", sans-serif;
 $desktop-width: 1024px; // от 1024px и выше
 $tablet-width: 768px; // 768px - 1023px;
 $mobile-width: 320px; // 320px - 767px;
+
+@mixin footer-heading() {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  color: var(--basic-blacken);
+}
+
+@mixin footer-text() {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--special-greyen);
+}
+
+//////

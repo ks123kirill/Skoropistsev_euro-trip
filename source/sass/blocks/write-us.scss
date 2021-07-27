@@ -1,0 +1,36 @@
+.write-us {
+  background-image: url("../img/sea-sunset-desktop.jpg");
+  background-position: top 0 left 200px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-sizing: border-box;
+  margin: 80px 0;
+  padding: 70px 0;
+}
+
+.write-us__form {
+  margin: 0 auto;
+}
+
+@media (max-width: 1248px) {
+  .write-us {
+    background-position: center;
+  }
+}
+
+@media (max-width: $desktop-width - 1px) {
+  .write-us {
+    background-image: url("../img/sea-sunset-tablet.jpg");
+  }
+}
+
+@media (max-width: $tablet-width - 1px) {
+  .write-us {
+    background-image: none;
+    background-color: var(--basic-cream);
+    padding: 0;
+    margin: 0;
+  }
+}
+
+////////////////

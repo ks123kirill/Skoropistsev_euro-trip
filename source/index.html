@@ -62,58 +62,88 @@
       </section>
 
       <section class="catalog wrapper">
-        <h2 class="catalog__heading">Места посещения</h2>
-        <p class="catalog__text">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
+        <h2 class="catalog__heading">Места&nbsp;<br class="catalog__br-desktop"> посещения</h2>
+        <p class="catalog__text">Вы можете выбрать полный тур или<br> частичный, с посещением первых 3 мест</p>
+
         <ul class="catalog__list">
           <li class="catalog__item">
             <a class="catalog__link" href="#">
-              <img class="catalog__img" src="" alt="">
+              <picture>
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/greece-tablet.webp 1x, img/greece-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/greece-desktop.webp 1x, img/greece-desktop@2x.webp 2x">
+
+                <source media="(max-width: 1023px)" srcset="img/greece-tablet.jpg 1x, img/greece-tablet@2x.jpg 2x">
+                <img class="catalog__img" src="img/greece-desktop.jpg" srcset="img/greece-desktop@2x.jpg 2x" width="350" height="430" alt="Пейзаж">
+              </picture>
             </a>
           </li>
           <li class="catalog__item">
             <a class="catalog__link" href="#">
-              <img class="catalog__img" src="" alt="">
+              <picture>
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/albania-tablet.webp 1x, img/albania-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/albania-desktop.webp 1x, img/albania-desktop@2x.webp 2x">
+
+                <source media="(max-width: 1023px)" srcset="img/albania-tablet.jpg 1x, img/albania-tablet@2x.jpg 2x">
+                <img class="catalog__img" src="img/albania-desktop.jpg" srcset="img/albania-desktop@2x.jpg 2x" width="350" height="430" alt="Пейзаж">
+              </picture>
             </a>
           </li>
           <li class="catalog__item">
             <a class="catalog__link" href="#">
-              <img class="catalog__img" src="" alt="">
+              <picture>
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/macedonia-tablet.webp 1x, img/macedonia-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/macedonia-desktop.webp 1x, img/macedonia-desktop@2x.webp 2x">
+
+                <source media="(max-width: 1023px)" srcset="img/macedonia-tablet.jpg 1x, img/macedonia-tablet@2x.jpg 2x">
+                <img class="catalog__img" src="img/macedonia-desktop.jpg" srcset="img/macedonia-desktop@2x.jpg 2x" width="350" height="430" alt="Пейзаж">
+              </picture>
             </a>
           </li>
           <li class="catalog__item">
             <a class="catalog__link" href="#">
-              <img class="catalog__img" src="" alt="">
+              <picture>
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/montenegro-tablet.webp 1x, img/montenegro-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/montenegro-desktop.webp 1x, img/montenegro-desktop@2x.webp 2x">
+
+                <source media="(max-width: 1023px)" srcset="img/montenegro-tablet.jpg 1x, img/montenegro-tablet@2x.jpg 2x">
+                <img class="catalog__img" src="img/montenegro-desktop.jpg" srcset="img/montenegro-desktop@2x.jpg 2x" width="350" height="430" alt="Пейзаж">
+              </picture>
             </a>
           </li>
           <li class="catalog__item">
             <a class="catalog__link" href="#">
-              <img class="catalog__img" src="" alt="">
+              <picture>
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/croatia-tablet.webp 1x, img/croatia-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/croatia-desktop.webp 1x, img/croatia-desktop@2x.webp 2x">
+
+                <source media="(max-width: 1023px)" srcset="img/croatia-tablet.jpg 1x, img/croatia-tablet@2x.jpg 2x">
+                <img class="catalog__img" src="img/croatia-desktop.jpg" srcset="img/croatia-desktop@2x.jpg 2x" width="350" height="430" alt="Пейзаж">
+              </picture>
             </a>
           </li>
         </ul>
       </section>
 
-      <section class="tabs wrapper">
-        <ul class="tabs__nav-list nav-tabs">
-          <li class="tabs__nav-item">Греция</li>
-          <li class="tabs__nav-item">Албания</li>
-          <li class="tabs__nav-item">Македония</li>
-          <li class="tabs__nav-item">Черногория</li>
-          <li class="tabs__nav-item">Хорватия</li>
-        </ul>
-        <div>
-          <ul class="tabs__list">
-            <li class="tabs__item">
-              <div class="tabs__block">
-                <h3 class="tabs__title">Греция</h3>
-                <p class="tabs__text">На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.</p>
-                <a class="tabs__link" href="#">купить тур сейчас</a>
-              </div>
-              <div class="tabs__block">
-                <img class="tabs__img" src="#" alt="">
+      <section class="tabs-section">
+        <div class="tabs-section__tabs tabs wrapper">
+          <ul class="tabs__nav nav-tabs">
+            <li class="nav-tabs__item">Греция</li>
+            <li class="nav-tabs__item">Албания</li>
+            <li class="nav-tabs__item">Македония</li>
+            <li class="nav-tabs__item">Черногория</li>
+            <li class="nav-tabs__item">Хорватия</li>
+          </ul>
+          <ul class="tabs__list list-tabs">
+            <li class="list-tabs__item">
+              <div class="list-tabs__block">
+                <h3 class="list-tabs__title">Греция</h3>
+                <p class="list-tabs__text">На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.</p>
+                <a class="list-tabs__link" href="#">купить тур сейчас</a>
               </div>
 
-              <blockquote class="tabs__review review">
+              <img class="list-tabs__img" src="#" alt="">
+
+              <blockquote class="list-tabs__review review">
                 <p class="review__title">Отзывы</p>
                 <h3 class="review__author">Влада Голицина</h3>
                 <div>
@@ -122,8 +152,8 @@
                 <p class="review__text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света! </p>
               </blockquote>
             </li>
-
-            <li class="tabs__item">
+            <!-- классы ниже не изменены -->
+            <li class="tabs__item visually-hidden">
               <div class="tabs__block">
                 <h3 class="tabs__title">Албания</h3>
                 <p class="tabs__text">В Албании мы посетим Курорт Ксамиль. Этот курорт поразит вас чистейшей водой и удивительным пляжем. Вначале кажется, что на пляже вас встречает обычный, правда невероятно белоснежный и слишком крупный песок. Однако, присмотревшись, можно понять, что это не песок, а камни, перетёртые до такого мелкого состояния. </p>
@@ -144,7 +174,7 @@
               </blockquote>
             </li>
 
-            <li class="tabs__item">
+            <li class="tabs__item visually-hidden">
               <div class="tabs__block">
                 <h3 class="tabs__title">Македония</h3>
                 <p class="tabs__text">В Македонии нашей целью будет посетить Палаошник, который расположился в удивительно красивой лесистой местности возле Охридского озера и Самуиловой твердыни. А также мы заберемся на вершину горы Татичев Камен где находится  археологический памятник Кокино в длину около 100 метров.</p>
@@ -165,7 +195,7 @@
               </blockquote>
             </li>
 
-            <li class="tabs__item">
+            <li class="tabs__item visually-hidden">
               <div class="tabs__block">
                 <h3 class="tabs__title">Черногория</h3>
                 <p class="tabs__text">Черногория удивит нас самым большим в Европе каньоном реки Тара, который в некоторых местах высотой берегов доходит до 1300 метров, а шириной не превышает трех. При этом длина каньона составляет 80 км. </p>
@@ -186,7 +216,7 @@
               </blockquote>
             </li>
 
-            <li class="tabs__item">
+            <li class="tabs__item visually-hidden">
               <div class="tabs__block">
                 <h3 class="tabs__title">Хорватия</h3>
                 <p class="tabs__text">В Хорватии мы посетим необычайную пещеру названную Бередине. Ее подземный мир увлечет вас на 80-ти метровую глубину через 5 освещенных залов, украшенных удивительными нерукотворными скульптурами —  сталактитами и сталагмитами —  формировавшимися тысячи и тысячи лет.</p>
@@ -208,54 +238,54 @@
             </li>
           </ul>
         </div>
-      </section>
 
-      <section class="price wrapper">
-        <div class="price__promo promo-price">
-          <h2 class="promo-price__heading">Цены</h2>
-          <p class="promo-price__text">Специально для Вас  мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших потребностей и возможностей. Выберите для себя лучший вариант отпуска и отдохните на все 100%! </p>
-          <p class="promo-price__connect">Свяжитесь с нами</p>
-          <a class="promo-price__link" href="#">+7 (499) -784-684-46</a>
+        <div class="tabs-section__price price wrapper">
+          <div class="price__promo promo-price">
+            <h2 class="promo-price__heading">Цены</h2>
+            <p class="promo-price__text">Специально для Вас  мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших потребностей и возможностей. Выберите для себя лучший вариант отпуска и отдохните на все 100%! </p>
+            <p class="promo-price__connect">Свяжитесь с нами</p>
+            <a class="promo-price__link" href="#">+7 (499) -784-684-46</a>
+          </div>
+
+          <ul class="price__list">
+            <li class="price__item item-price">
+              <h3 class="item-price__title">Комплексный</h3>
+              <p class="item-price__cost">$1999</p>
+              <p class="item-price__info">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
+              <ul class="item-price__list">
+                <li class="item-price__point">Разработанный маршрут с гидом группы</li>
+                <li class="item-price__point">Перелет, трансфер и проживание в отелях</li>
+                <li class="item-price__point">Завтраки, ужины в отелях и ланчи на природе</li>
+                <li class="item-price__point">
+                  <p class="item-price__text">Экскурсии по удивительно красивым местам Европы</p>
+                  <a class="sale-link item-price__point-link" href="#">купить тур сейчас</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="price__item item-price">
+              <h3 class="item-price__title">Экономный</h3>
+              <p class="item-price__cost">$1399</p>
+              <p class="item-price__info">Ознакомьтесь с перечнем того, что входит в данный пакет </p>
+              <ul class="item-price__list">
+                <li class="item-price__point">Разработанный маршрут с гидом группы</li>
+                <li class="item-price__point">Перелет и трансфер</li>
+                <li class="item-price__point">Проживание в хостелах при отелях</li>
+                <li class="item-price__point">Только завтраки в отелях</li>
+                <li class="item-price__point">
+                  <p class="item-price__text">Экскурсии по удивительно красивым местам Европы</p>
+                  <a class="sale-link item-price__point-link" href="#">купить тур сейчас</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
-
-        <ul class="price__list">
-          <li class="price__item item-price">
-            <h3 class="item-price__title">Комплексный</h3>
-            <p class="item-price__cost">$1999</p>
-            <p class="item-price__info">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
-            <ul class="item-price__list">
-              <li class="item-price__point">Разработанный маршрут с гидом группы</li>
-              <li class="item-price__point">Перелет, трансфер и проживание в отелях</li>
-              <li class="item-price__point">Завтраки, ужины в отелях и ланчи на природе</li>
-              <li class="item-price__point">
-                <p class="item-price__text">Экскурсии по удивительно красивым местам Европы</p>
-                <a class="sale-link item-price__point-link" href="#">купить тур сейчас</a>
-              </li>
-            </ul>
-          </li>
-
-          <li class="price__item item-price">
-            <h3 class="item-price__title">Экономный</h3>
-            <p class="item-price__cost">$1399</p>
-            <p class="item-price__info">Ознакомьтесь с перечнем того, что входит в данный пакет </p>
-            <ul class="item-price__list">
-              <li class="item-price__point">Разработанный маршрут с гидом группы</li>
-              <li class="item-price__point">Перелет и трансфер</li>
-              <li class="item-price__point">Проживание в хостелах при отелях</li>
-              <li class="item-price__point">Только завтраки в отелях</li>
-              <li class="item-price__point">
-                <p class="item-price__text">Экскурсии по удивительно красивым местам Европы</p>
-                <a class="sale-link item-price__point-link" href="#">купить тур сейчас</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
       </section>
 
-      <section class="main-form wrapper">
+      <section class="write-us">
         <h2 class="visually-hidden">Форма заявки для обратной связи</h2>
-        <form class="main-form form" action="https://echo.htmlacademy.ru" method="POST">
-          <p class="form__text">У Вас остались вопросы?</p>
+        <form class="write-us__form form" action="https://echo.htmlacademy.ru" method="POST">
+          <p class="form__title">У Вас остались вопросы?</p>
           <p class="form__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
           <label class="form__label">
             <input class="form__input form__input--phone" type="tel" placeholder="* +7 Введите 10 цифр номера">
@@ -263,7 +293,7 @@
           <label class="form__label">
             <input class="form__input form__input--email"type="email" placeholder="E-mail">
           </label>
-          <button class="button button--submit form__button" type="submit">Отправить</button>
+          <button class="button button--special form__button" type="submit">Отправить</button>
         </form>
       </section>
     </main>

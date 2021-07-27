@@ -2,6 +2,8 @@
   --basic-white: #ffffff;
   --basic-blacken: rgba(20, 21, 23, 1);
   --basic-black: rgba(44, 46, 63, 1);
+  --basic-black-lighten: rgba(44, 46, 63, 0.7);
+
   --basic-orange: rgba(254, 120, 101, 1);
   --basic-cream: rgba(251, 248, 248, 1);
 
@@ -9,6 +11,8 @@
   --special-grey: rgb(190, 194, 204);
   --special-greyen: rgba(20, 21, 23, 0.5);
   --special-grey-lighten: rgba(215, 217, 223, 1);
+  --special-black-shadow: rgba(41, 54, 66, 0.1);
+  --special-black-lighten: rgba(44, 46, 63, 0.3);
 }
 
 $font-family-basic: "Montserrat", "Arial", sans-serif;
@@ -32,6 +36,31 @@ $mobile-width: 320px; // 320px - 767px;
   color: var(--special-greyen);
   padding: 0;
   margin: 0;
+}
+
+@mixin text-large--desktop() {
+  font-weight: 600;
+  font-size: 55px;
+  color: var(--basic-black);
+}
+
+@mixin text-large--tablet() {
+  font-size: 30px;
+  line-height: 45px;
+  color: var(--basic-black);
+}
+
+@mixin text-large--mobile() {
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--basic-black);
+}
+
+@mixin text-medium() {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--basic-black-lighten);
 }
 
 //////

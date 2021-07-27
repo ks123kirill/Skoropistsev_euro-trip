@@ -47,6 +47,14 @@
 }
 
 @media (max-width: $mobile-width) {
+  .footer-trips__list {
+    justify-content: space-between;
+  }
+
+  .footer-trips__item {
+    width: 140px;
+  }
+
   .footer-trips__item:nth-child(3) {
     order: 11;
   }
@@ -68,7 +76,8 @@
   }
 
   .footer-trips__item:nth-child(3n+3) {
-    margin: 0 50px;
+    margin: 0 auto;
+    width: 200px;
   }
 }
 

@@ -1,5 +1,6 @@
 .promo {
   position: relative;
+  padding-bottom: 100px;
   outline: 5px solid aqua;
   outline-offset: -5px;
 }
@@ -17,7 +18,6 @@
   top: 21.5%;
   right: 50%;
   transform: translate(527px);
-  // max-width: 470px;
   text-align: left;
   padding: 0;
   margin: 0;
@@ -58,12 +58,15 @@
 }
 
 @media (max-width: $desktop-width - 1px) {
+  .promo {
+    padding-bottom: 40px;
+  }
+
   .promo__br-desktop {
     display: none;
   }
 
   .promo__wrapper {
-    // max-width: 420px; ///////////
     top: 16%;
     transform: translate(50%);
     text-align: center;
@@ -87,6 +90,10 @@
 
 
 @media (max-width: $tablet-width - 1px) {
+  .promo {
+    padding-bottom: 25px;
+  }
+
   .promo__wrapper {
     position: relative;
     right: 0;

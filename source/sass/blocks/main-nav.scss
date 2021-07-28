@@ -88,21 +88,6 @@
         0 20px 0 0 var(--basic-white);
       border-radius: 5px;
     }
-
-    // &:hover::before,
-    // &:focus::before {
-    //   background-color: var(--basic-red);
-    //   box-shadow:
-    //     0 10px 0 0 var(--basic-red),
-    //     0 20px 0 0 var(--basic-red);
-    // }
-
-    // &:active::before {
-    //   background-color: var(--special-red-opacity);
-    //   box-shadow:
-    //     0 10px 0 0 var(--special-red-opacity),
-    //     0 20px 0 0 var(--special-red-opacity);
-    // }
   }
 
   .main-nav--close .main-nav__toggle {
@@ -127,18 +112,6 @@
     &::after {
       transform: rotate(-45deg);
     }
-
-    // &:hover::before,
-    // &:focus::before,
-    // &:hover::after,
-    // &:focus::after {
-    //   background-color: var(--basic-red);
-    // }
-
-    // &:active::before,
-    // &:active::after {
-    //   background-color: var(--special-red-opacity);
-    // }
   }
 
   .main-nav__list {

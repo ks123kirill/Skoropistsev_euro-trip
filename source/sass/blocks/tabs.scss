@@ -1,6 +1,17 @@
-// .tabs {
+.tabs {
+  max-width: 1210px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  // outline: 5px solid yellowgreen;
+  // outline-offset: -5px;
+}
 
-// }
 
+@media (max-width: $desktop-width - 1px) {
+  .tabs {
+    padding: 0;
+  }
+}
 /////////
 

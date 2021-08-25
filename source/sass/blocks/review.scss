@@ -1,13 +1,10 @@
 .review {
   width: 382px;
-  height: 367px;
   text-align: left;
   background-color: var(--basic-white);
   box-sizing: border-box;
   padding: 30px 18px 30px 30px;
   margin: 0;
-  // outline: 5px solid blue;
-  // outline-offset: -5px;
 }
 
 .review__title {
@@ -24,8 +21,7 @@
     content: "";
     width: 68px;
     height: 1px;
-    top: 50px;
-    bottom: -19px;
+    bottom: 15px;
     left: 0;
     background-color: var(--basic-orange);
   }
@@ -65,7 +61,35 @@
 @media (max-width: $tablet-width - 1px) {
   .review {
     width: 268px;
-    height: 431px;
+    padding: 30px 20px 30px 20px;
+  }
+
+  .review__title {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+
+    &::after {
+      left: 80px;
+    }
+  }
+
+  .review__text {
+    text-align: center;
+  }
+
+  .review__avatar {
+    justify-content: center;
+  }
+
+  .review__img {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .review__author {
+    flex-basis: 100%;
+    text-align: center;
   }
 }
 ///////

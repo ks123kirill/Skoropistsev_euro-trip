@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Путешествие по Европе</title>
-    <link rel="preload" href="fonts/montserrat-bold.woff2" as="font">
+    <!-- <link rel="preload" href="fonts/montserrat-bold.woff2" as="font">
     <link rel="preload" href="fonts/montserrat-semibold.woff2" as="font">
     <link rel="preload" href="fonts/montserrat-medium.woff2" as="font">
-    <link rel="preload" href="fonts/montserrat-regular.woff2" as="font">
+    <link rel="preload" href="fonts/montserrat-regular.woff2" as="font"> -->
     <link rel="stylesheet" href="css/style.min.css">
   </head>
 
   <body class="page-body">
     <header class="main-header wrapper">
       <div class="main-header__logo logo">
-        <a class="logo__link" href="#">
+        <a class="logo__link">
           <svg class="logo__link-img" width="58" height="22" role="img">
             <use xlink:href="img/sprite.svg#logo-desktop"></use>
           </svg>
@@ -24,10 +24,10 @@
         <button class="main-nav__toggle button" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--common" href="#">О путешествии</a>
+            <a class="main-nav__link main-nav__link--common" href="#catalog">О путешествии</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--common" href="#">Цены</a>
+            <a class="main-nav__link main-nav__link--common" href="#price">Цены</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link main-nav__link--phone" href="tel:+749978468446">
@@ -57,17 +57,17 @@
           <div class="promo__wrapper">
             <h1 class="promo__heading">Путешествие&nbsp;<br class="promo__br-desktop">по&nbsp;<br class="promo__br-mobile">Европе</h1>
             <p class="promo__text">В этом туре вы откроете для себя Европу в&nbsp;<br class="promo__br-desktop">новом свете. Вас ждет: море, горы, а также&nbsp;<br class="promo__br-desktop">потрясающая красота природы.</p>
-            <button class="promo__button button button--special" type="button">Смотреть тур</button>
+            <a class="promo__button button button--special" href="#nav-tabs">Смотреть тур</a>
           </div>
       </section>
 
-      <section class="catalog wrapper">
+      <section class="catalog wrapper" id="catalog">
         <h2 class="catalog__heading">Места&nbsp;<br class="catalog__br-desktop"> посещения</h2>
         <p class="catalog__text">Вы можете выбрать полный тур или<br> частичный, с посещением первых 3 мест</p>
 
         <ul class="catalog__list">
           <li class="catalog__item">
-            <a class="catalog__link" href="#">
+            <a class="catalog__link" href="#nav-tabs">
               <picture>
                 <source type="image/webp" media="(max-width: 1023px)" srcset="img/greece-tablet.webp 1x, img/greece-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/greece-desktop.webp 1x, img/greece-desktop@2x.webp 2x">
@@ -78,7 +78,7 @@
             </a>
           </li>
           <li class="catalog__item">
-            <a class="catalog__link" href="#">
+            <a class="catalog__link" href="#nav-tabs">
               <picture>
                 <source type="image/webp" media="(max-width: 1023px)" srcset="img/albania-tablet.webp 1x, img/albania-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/albania-desktop.webp 1x, img/albania-desktop@2x.webp 2x">
@@ -89,7 +89,7 @@
             </a>
           </li>
           <li class="catalog__item">
-            <a class="catalog__link" href="#">
+            <a class="catalog__link" href="#nav-tabs">
               <picture>
                 <source type="image/webp" media="(max-width: 1023px)" srcset="img/macedonia-tablet.webp 1x, img/macedonia-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/macedonia-desktop.webp 1x, img/macedonia-desktop@2x.webp 2x">
@@ -100,7 +100,7 @@
             </a>
           </li>
           <li class="catalog__item">
-            <a class="catalog__link" href="#">
+            <a class="catalog__link" href="#nav-tabs">
               <picture>
                 <source type="image/webp" media="(max-width: 1023px)" srcset="img/montenegro-tablet.webp 1x, img/montenegro-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/montenegro-desktop.webp 1x, img/montenegro-desktop@2x.webp 2x">
@@ -111,7 +111,7 @@
             </a>
           </li>
           <li class="catalog__item">
-            <a class="catalog__link" href="#">
+            <a class="catalog__link" href="#nav-tabs">
               <picture>
                 <source type="image/webp" media="(max-width: 1023px)" srcset="img/croatia-tablet.webp 1x, img/croatia-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/croatia-desktop.webp 1x, img/croatia-desktop@2x.webp 2x">
@@ -126,15 +126,28 @@
 
       <section class="tabs-section">
         <div class="tabs-section__tabs tabs">
-          <ul class="tabs__nav nav-tabs">
-            <li class="nav-tabs__item">Греция</li>
-            <li class="nav-tabs__item">Албания</li>
-            <li class="nav-tabs__item">Македония</li>
-            <li class="nav-tabs__item">Черногория</li>
-            <li class="nav-tabs__item">Хорватия</li>
-          </ul>
+          <div class="tabs__nav-wrapper">
+            <ul class="tabs__nav nav-tabs" id="nav-tabs">
+              <li class="nav-tabs__item">
+                <a class="nav-tabs__link nav-tabs__link--active" href="#">Греция</a>
+              </li>
+              <li class="nav-tabs__item">
+                <a class="nav-tabs__link" href="#">Албания</a>
+              </li>
+              <li class="nav-tabs__item">
+                <a class="nav-tabs__link" href="#">Македония</a>
+              </li>
+              <li class="nav-tabs__item">
+                <a class="nav-tabs__link" href="#">Черногория</a>
+              </li>
+              <li class="nav-tabs__item">
+                <a class="nav-tabs__link" href="#">Хорватия</a>
+              </li>
+            </ul>
+          </div>
+
           <ul class="tabs__list list-tabs">
-            <li class="list-tabs__item">
+            <li class="list-tabs__item list-tabs__item--show">
               <div class="list-tabs__block">
                 <h3 class="list-tabs__title">Греция</h3>
                 <p class="list-tabs__text">На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.</p>
@@ -156,15 +169,15 @@
                 <p class="review__text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света! </p>
                 <div class="review__avatar">
                   <picture>
-                    <source type="image/webp" srcset="img/avatar-vlada-golitcina.webp 1x, img/avatar-vlada-golitcina@2x.webp 2x">
-                    <img class="review__img" src="img/avatar-vlada-golitcina.jpg" srcset="img/avatar-vlada-golitcina@2x.jpg 2x" width="38" height="38" alt="аватар Влады Галициной">
+                    <source type="image/webp" srcset="img/avatar-vlada-golitcina.webp">
+                    <img class="review__img" src="img/avatar-vlada-golitcina.jpg" width="38" height="38" alt="аватар Влада Галицина">
                   </picture>
                   <p class="review__author">Влада Голицина</p>
                 </div>
               </blockquote>
             </li>
 
-            <li class="list-tabs__item visually-hidden">
+            <li class="list-tabs__item">
               <div class="list-tabs__block">
                 <h3 class="list-tabs__title">Албания</h3>
                 <p class="list-tabs__text">В Албании мы посетим Курорт Ксамиль. Этот курорт поразит вас чистейшей водой и удивительным пляжем. Вначале кажется, что на пляже вас встречает обычный, правда невероятно белоснежный и слишком крупный песок. Однако, присмотревшись, можно понять, что это не песок, а камни, перетёртые до такого мелкого состояния. </p>
@@ -183,13 +196,18 @@
 
               <blockquote class="list-tabs__review review">
                 <p class="review__title">Отзывы</p>
-                <h3 class="review__author">Маришка</h3>
-                <img class="review__img" src="" alt="">
                 <p class="review__text">Замечательный курорт, обязательно стоит посетить. В следующий раз возьму с собой сестру, чтобы тоже смогла вкусить все красоты природы :)</p>
+                <div class="review__avatar">
+                  <picture>
+                    <source type="image/webp" srcset="img/avatar-marishka.webp">
+                      <img class="review__img" src="img/avatar-marishka.jpg" width="38" height="38" alt="аватар Маришка">
+                  </picture>
+                  <p class="review__author">Маришка</p>
+                </div>
               </blockquote>
             </li>
 
-            <li class="list-tabs__item visually-hidden">
+            <li class="list-tabs__item">
               <div class="list-tabs__block">
                 <h3 class="list-tabs__title">Македония</h3>
                 <p class="list-tabs__text">В Македонии нашей целью будет посетить Палаошник, который расположился в удивительно красивой лесистой местности возле Охридского озера и Самуиловой твердыни. А также мы заберемся на вершину горы Татичев Камен где находится  археологический памятник Кокино в длину около 100 метров.</p>
@@ -208,13 +226,18 @@
 
               <blockquote class="list-tabs__review review">
                 <p class="review__title">Отзывы</p>
-                <h3 class="review__author">Михаил Кузьмин</h3>
-                <img class="review__img" src="" alt="">
                 <p class="review__text">Я бы сказал необычное старое здание. В архитектуре я не разбираюсь, но подъем в гору был очень веселым так как люди оказались легкими и заводными. Красота природы впечатлила, особенно после долгого пути в гору.</p>
+                <div class="review__avatar">
+                  <picture>
+                    <source type="image/webp" srcset="img/avatar-michail-kuzmin.webp">
+                      <img class="review__img" src="img/avatar-michail-kuzmin.jpg" width="38" height="38" alt="аватар Михаил Кузимин">
+                  </picture>
+                  <p class="review__author">Михаил Кузьмин</p>
+                </div>
               </blockquote>
             </li>
 
-            <li class="list-tabs__item visually-hidden">
+            <li class="list-tabs__item">
               <div class="list-tabs__block">
                 <h3 class="list-tabs__title">Черногория</h3>
                 <p class="list-tabs__text">Черногория удивит нас самым большим в Европе каньоном реки Тара, который в некоторых местах высотой берегов доходит до 1300 метров, а шириной не превышает трех. При этом длина каньона составляет 80 км. </p>
@@ -233,13 +256,18 @@
 
               <blockquote class="list-tabs__review review">
                 <p class="review__title">Отзывы</p>
-                <h3 class="review__author">Анастасия Мей</h3>
-                <img class="review__img" src="" alt="">
-                <p class="review__text">Неописуемой красоты каньон! Ничего прекраснее в жизни не видела, разве что в фильмах :) Всем советую</p>
+                <p class="review__text">Неописуемой красоты каньон! Ничего прекраснее в жизни не видела, разве что в фильмах :) Всем советую.</p>
+                <div class="review__avatar">
+                  <picture>
+                    <source type="image/webp" srcset="img/avatar-anactacia-mai.webp">
+                      <img class="review__img" src="img/avatar-anactacia-mai.jpg" width="38" height="38" alt="аватар Анастасия Мей">
+                  </picture>
+                  <p class="review__author">Анастасия Мей</p>
+                </div>
               </blockquote>
             </li>
 
-            <li class="list-tabs__item visually-hidden">
+            <li class="list-tabs__item">
               <div class="list-tabs__block">
                 <h3 class="list-tabs__title">Хорватия</h3>
                 <p class="list-tabs__text">В Хорватии мы посетим необычайную пещеру названную Бередине. Ее подземный мир увлечет вас на 80-ти метровую глубину через 5 освещенных залов, украшенных удивительными нерукотворными скульптурами —  сталактитами и сталагмитами —  формировавшимися тысячи и тысячи лет.</p>
@@ -258,15 +286,20 @@
 
               <blockquote class="list-tabs__review review">
                 <p class="review__title">Отзывы</p>
-                <h3 class="review__author-name">Владимир Мулицин</h3>
-                <img class="review__img" src="" alt="">
                 <p class="review__text">Мы поехали всей семьей, я, моя жена и родители. Пещера просто незабываема! А то, что все это формировалось тысячелетиями, мега необычно. Первоначально даже не верилось, но натур ни с чем не спутать по итогу :)</p>
+                <div class="review__avatar">
+                  <picture>
+                    <source type="image/webp" srcset="img/avatar-vladimir-mulitsin.webp">
+                      <img class="review__img" src="img/avatar-vladimir-mulitsin.jpg" width="38" height="38" alt="аватар Владимир Мулицин">
+                  </picture>
+                  <p class="review__author">Владимир Мулицин</p>
+                </div>
               </blockquote>
             </li>
           </ul>
         </div>
 
-        <div class="tabs-section__price price wrapper">
+        <div class="tabs-section__price price wrapper" id="price">
           <div class="price__promo promo-price">
             <h2 class="promo-price__heading">Цены</h2>
             <p class="promo-price__text">Специально для Вас  мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших потребностей и возможностей. Выберите для себя лучший вариант отпуска и отдохните на все 100%! </p>

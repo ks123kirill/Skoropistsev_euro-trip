@@ -39,7 +39,7 @@
 
 .catalog__link {
   position: relative;
-  text-decoration: none;
+  // text-decoration: none;
 
   &::before {
     display: none;
@@ -50,9 +50,6 @@
     height: 77px;
     top: 170px;
     left: -135px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
     text-transform: uppercase;
     color: var(--basic-white);
     border: 1px solid var(--basic-white);
@@ -64,20 +61,23 @@
     position: absolute;
     content: "";
     width: 215px;
-    height: 42px;
-    top: 380px;
+    height: 63px;
+    top: 368px;
     left: -108px;
 
-    font-weight: 500px;
     font-size: 24px;
     line-height: 30px;
+    box-sizing: border-box;
     color: var(--basic-black);
     background-color: var(--basic-white);
-    padding-top: 10px;
+    padding-top: 18px;
   }
 }
 
 .catalog__item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
   padding: 0;
   margin: 0 60px 100px 0;
 
@@ -166,6 +166,11 @@
   .catalog__img {
     width: 288px;
     height: 425px;
+    object-fit: cover;
+  }
+
+  .catalog__link::after {
+    top: 362px;
   }
 
   .catalog__br-desktop {

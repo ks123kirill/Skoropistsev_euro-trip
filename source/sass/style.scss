@@ -1,7 +1,7 @@
 // Global
 @import "global/fonts.scss";
 @import "global/variables.scss";
-
+@import "global/global-tags.scss";
 
 //Blocks
 @import "blocks/wrapper.scss";
@@ -11,7 +11,6 @@
 @import "blocks/main-header.scss";
 @import "blocks/logo.scss";
 @import "blocks/main-nav.scss";
-@import "blocks/page-main.scss";
 @import "blocks/promo.scss";
 @import "blocks/catalog.scss";
 @import "blocks/tabs-section.scss";
@@ -20,6 +19,8 @@
 @import "blocks/list-tabs.scss";
 @import "blocks/review.scss";
 @import "blocks/price.scss";
+@import "blocks/promo-price.scss";
+@import "blocks/list-price.scss";
 @import "blocks/write-us.scss";
 @import "blocks/form.scss";
 @import "blocks/main-footer.scss";

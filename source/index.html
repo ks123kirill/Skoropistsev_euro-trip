@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Путешествие по Европе</title>
-    <!-- <link rel="preload" href="fonts/montserrat-bold.woff2" as="font">
-    <link rel="preload" href="fonts/montserrat-semibold.woff2" as="font">
-    <link rel="preload" href="fonts/montserrat-medium.woff2" as="font">
-    <link rel="preload" href="fonts/montserrat-regular.woff2" as="font"> -->
+    <link rel="preload" href="fonts/montserrat-bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/montserrat-semibold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/montserrat-medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/montserrat-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="css/style.min.css" as="style">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
 
@@ -41,7 +42,7 @@
       </nav>
     </header>
 
-    <main class="page-main">
+    <main>
       <section class="promo">
 
         <picture>
@@ -307,34 +308,38 @@
             <a class="promo-price__link" href="#">+7 (499) -784-684-46</a>
           </div>
 
-          <ul class="price__list">
-            <li class="price__item item-price">
-              <h3 class="item-price__title">Комплексный</h3>
-              <p class="item-price__cost">$1999</p>
-              <p class="item-price__info">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
-              <ul class="item-price__list">
-                <li class="item-price__point">Разработанный маршрут с гидом группы</li>
-                <li class="item-price__point">Перелет, трансфер и проживание в отелях</li>
-                <li class="item-price__point">Завтраки, ужины в отелях и ланчи на природе</li>
-                <li class="item-price__point">
-                  <p class="item-price__text">Экскурсии по удивительно красивым местам Европы</p>
-                  <a class="sale-link item-price__point-link" href="#">купить тур сейчас</a>
+          <ul class="price__list list-price">
+            <li class="list-price__item list-price__item--best">
+              <div>
+                <h3 class="list-price__title">Комплексный</h3>
+                <p class="list-price__cost">$1999</p>
+              </div>
+              <p class="list-price__info">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
+              <ul class="list-price__list">
+                <li class="list-price__point">Разработанный маршрут с гидом группы</li>
+                <li class="list-price__point">Перелет, трансфер и проживание в отелях</li>
+                <li class="list-price__point">Завтраки, ужины в отелях и ланчи на природе</li>
+                <li class="list-price__point">
+                  <p class="list-price__text">Экскурсии по удивительно красивым местам Европы</p>
+                  <a class="button button--special list-price__point-link" href="#">купить тур сейчас</a>
                 </li>
               </ul>
             </li>
 
-            <li class="price__item item-price">
-              <h3 class="item-price__title">Экономный</h3>
-              <p class="item-price__cost">$1399</p>
-              <p class="item-price__info">Ознакомьтесь с перечнем того, что входит в данный пакет </p>
-              <ul class="item-price__list">
-                <li class="item-price__point">Разработанный маршрут с гидом группы</li>
-                <li class="item-price__point">Перелет и трансфер</li>
-                <li class="item-price__point">Проживание в хостелах при отелях</li>
-                <li class="item-price__point">Только завтраки в отелях</li>
-                <li class="item-price__point">
-                  <p class="item-price__text">Экскурсии по удивительно красивым местам Европы</p>
-                  <a class="sale-link item-price__point-link" href="#">купить тур сейчас</a>
+            <li class="list-price__item">
+              <div>
+                <h3 class="list-price__title">Экономный</h3>
+                <p class="list-price__cost">$1399</p>
+              </div>
+              <p class="list-price__info">Ознакомьтесь с перечнем того, что входит в данный пакет </p>
+              <ul class="list-price__list">
+                <li class="list-price__point">Разработанный маршрут с гидом группы</li>
+                <li class="list-price__point">Перелет и трансфер</li>
+                <li class="list-price__point">Проживание в хостелах при отелях</li>
+                <li class="list-price__point">Только завтраки в отелях</li>
+                <li class="list-price__point">
+                  <p class="list-price__text">Экскурсии по удивительно красивым местам Европы</p>
+                  <a class="button button--special list-price__point-link" href="#">купить тур сейчас</a>
                 </li>
               </ul>
             </li>

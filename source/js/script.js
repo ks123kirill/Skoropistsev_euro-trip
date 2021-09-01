@@ -61,9 +61,26 @@ const getCatalogLink = function () {
   }
 }
 
+const getSmoothLinks = function () {
+  const smoothLinks = document.querySelectorAll('a[href^="#"]');
+
+  smoothLinks.forEach(function (smoothLink) {
+    smoothLink.addEventListener('click', function (e) {
+      e.preventDefault();
+      const id = smoothLink.getAttribute('href');
+
+      document.querySelector(id).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    });
+  });
+};
+
 mainNavJs();
 tabsJs();
 getActiveTab();
 getCatalogLink();
+getSmoothLinks();
 
 ///////////

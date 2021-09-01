@@ -1,0 +1,22 @@
+.promo-price {
+  flex-basis: 306px;
+  text-align: left;
+}
+
+.promo-price__heading {
+  @include text-large--desktop();
+  position: relative;
+  line-height: 90px;
+  padding: 0;
+  margin: 0 0 60px 0;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 175px;
+    height: 3px;
+    bottom: -19px;
+    left: 0;
+    background-color: var(--basic-orange);
+  }
+}

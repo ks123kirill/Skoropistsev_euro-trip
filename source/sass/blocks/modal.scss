@@ -1,0 +1,117 @@
+.modal {
+  display: none;
+  position: fixed;
+  max-width: 760px;
+  max-height: 568px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  padding: 100px 100px;
+  background-color: var(--basic-white);
+  box-shadow: 0 0 40px 20px var(--special-black-shadow);
+  z-index: 10;
+  overflow-y: overlay;
+}
+
+.modal--show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-buy__title {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 42px;
+  margin: 0;
+  padding: 0 0 52px 0;
+}
+
+.modal-buy__form {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.modal-buy__label,
+.modal-buy__submit {
+  flex-basis: 100%;
+  flex-grow: 1;
+}
+
+.modal-buy__input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid var(--special-black-lighten);
+  font-family: $font-family-basic;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  cursor: pointer;
+  padding-left: 15px;
+  margin-bottom: 20px;
+
+  &:hover,
+  &:focus {
+    border-color: var(--basic-black);
+  }
+
+  &:invalid {
+    border-color: var(--basic-orange);
+  }
+}
+
+.modal-buy__input::placeholder {
+  color: var(--basic-blacken);
+}
+
+.modal-buy__submit {
+  min-height: 50px;
+}
+
+.modal__close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  background-image: url("../img/icons/icon-close-cross.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: var(--basic-white);
+  border: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.modal--error {
+  animation: shake 0.6s;
+}
+
+.modal-success {
+  background-color: var(--basic-cream);
+  max-height: 400px;
+}
+
+.modal-success__text {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 32px;
+  color: var(--special-grey-whiten);
+}
+
+@media (max-width: $tablet-width - 1px) {
+  .modal {
+    padding: 100px 16px;
+  }
+}

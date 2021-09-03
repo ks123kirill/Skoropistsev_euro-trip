@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Путешествие по Европе</title>
-    <link rel="preload" href="fonts/montserrat-bold.woff2" as="font" type="font/woff2" crossorigin>
+    <!-- <link rel="preload" href="fonts/montserrat-bold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/montserrat-semibold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/montserrat-medium.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/montserrat-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/montserrat-regular.woff2" as="font" type="font/woff2" crossorigin> -->
     <link rel="preload" href="css/style.min.css" as="style">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
@@ -152,7 +152,7 @@
               <div class="list-tabs__block">
                 <h3 class="list-tabs__title">Греция</h3>
                 <p class="list-tabs__text">На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.</p>
-                <a class="list-tabs__link button button--special" href="#">купить тур сейчас</a>
+                <a class="list-tabs__link button button--special tabs-section__buy" href="#">купить тур сейчас</a>
               </div>
 
               <picture>
@@ -182,7 +182,7 @@
               <div class="list-tabs__block">
                 <h3 class="list-tabs__title">Албания</h3>
                 <p class="list-tabs__text">В Албании мы посетим Курорт Ксамиль. Этот курорт поразит вас чистейшей водой и удивительным пляжем. Вначале кажется, что на пляже вас встречает обычный, правда невероятно белоснежный и слишком крупный песок. Однако, присмотревшись, можно понять, что это не песок, а камни, перетёртые до такого мелкого состояния. </p>
-                <a class="list-tabs__link button button--special" href="#">купить тур сейчас</a>
+                <a class="list-tabs__link button button--special tabs-section__buy" href="#">купить тур сейчас</a>
               </div>
 
               <picture>
@@ -212,7 +212,7 @@
               <div class="list-tabs__block">
                 <h3 class="list-tabs__title">Македония</h3>
                 <p class="list-tabs__text">В Македонии нашей целью будет посетить Палаошник, который расположился в удивительно красивой лесистой местности возле Охридского озера и Самуиловой твердыни. А также мы заберемся на вершину горы Татичев Камен где находится  археологический памятник Кокино в длину около 100 метров.</p>
-                <a class="list-tabs__link button button--special" href="#">купить тур сейчас</a>
+                <a class="list-tabs__link button button--special tabs-section__buy" href="#">купить тур сейчас</a>
               </div>
 
               <picture>
@@ -242,7 +242,7 @@
               <div class="list-tabs__block">
                 <h3 class="list-tabs__title">Черногория</h3>
                 <p class="list-tabs__text">Черногория удивит нас самым большим в Европе каньоном реки Тара, который в некоторых местах высотой берегов доходит до 1300 метров, а шириной не превышает трех. При этом длина каньона составляет 80 км. </p>
-                <a class="list-tabs__link button button--special" href="#">купить тур сейчас</a>
+                <a class="list-tabs__link button button--special tabs-section__buy" href="#">купить тур сейчас</a>
               </div>
 
               <picture>
@@ -272,7 +272,7 @@
               <div class="list-tabs__block">
                 <h3 class="list-tabs__title">Хорватия</h3>
                 <p class="list-tabs__text">В Хорватии мы посетим необычайную пещеру названную Бередине. Ее подземный мир увлечет вас на 80-ти метровую глубину через 5 освещенных залов, украшенных удивительными нерукотворными скульптурами —  сталактитами и сталагмитами —  формировавшимися тысячи и тысячи лет.</p>
-                <a class="list-tabs__link button button--special"href="#">купить тур сейчас</a>
+                <a class="list-tabs__link button button--special tabs-section__buy"href="#">купить тур сейчас</a>
               </div>
 
               <picture>
@@ -305,7 +305,12 @@
             <h2 class="promo-price__heading">Цены</h2>
             <p class="promo-price__text">Специально для Вас  мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших потребностей и возможностей. Выберите для себя лучший вариант отпуска и отдохните на все 100%! </p>
             <p class="promo-price__connect">Свяжитесь с нами</p>
-            <a class="promo-price__link" href="#">+7 (499) -784-684-46</a>
+            <a class="promo-price__link" href="tel:+749978468446">
+              <svg class="promo-price__link-img" width="17" height="24" role="img">
+                <use xlink:href="img/sprite.svg#icon-phone"></use>
+              </svg>
+              +7 (499) -784-684-46
+            </a>
           </div>
 
           <ul class="price__list list-price">
@@ -319,11 +324,10 @@
                 <li class="list-price__point">Разработанный маршрут с гидом группы</li>
                 <li class="list-price__point">Перелет, трансфер и проживание в отелях</li>
                 <li class="list-price__point">Завтраки, ужины в отелях и ланчи на природе</li>
-                <li class="list-price__point">
-                  <p class="list-price__text">Экскурсии по удивительно красивым местам Европы</p>
-                  <a class="button button--special list-price__point-link" href="#">купить тур сейчас</a>
+                <li class="list-price__point">Экскурсии по удивительно красивым местам Европы
                 </li>
               </ul>
+              <a class="button button--special list-price__point-link tabs-section__buy" href="#">купить тур сейчас</a>
             </li>
 
             <li class="list-price__item">
@@ -337,11 +341,10 @@
                 <li class="list-price__point">Перелет и трансфер</li>
                 <li class="list-price__point">Проживание в хостелах при отелях</li>
                 <li class="list-price__point">Только завтраки в отелях</li>
-                <li class="list-price__point">
-                  <p class="list-price__text">Экскурсии по удивительно красивым местам Европы</p>
-                  <a class="button button--special list-price__point-link" href="#">купить тур сейчас</a>
+                <li class="list-price__point">Экскурсии по удивительно красивым местам Европы
                 </li>
               </ul>
+              <a class="button button--special list-price__point-link tabs-section__buy" href="#">купить тур сейчас</a>
             </li>
           </ul>
         </div>
@@ -353,10 +356,10 @@
           <p class="form__title">У Вас остались вопросы?</p>
           <p class="form__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
           <label class="form__label">
-            <input class="form__input form__input--phone" type="tel" placeholder="* +7 Введите 10 цифр номера">
+            <input class="form__input form__input--phone" type="tel" placeholder="* +7 Введите 10 цифр номера" pattern="^[ 0-9]+$">
           </label>
           <label class="form__label">
-            <input class="form__input form__input--email"type="email" placeholder="E-mail">
+            <input class="form__input form__input--email" type="email" placeholder="E-mail">
           </label>
           <button class="button button--special form__button" type="submit">Отправить</button>
         </form>
@@ -408,6 +411,29 @@
       </section>
     </footer>
 
-    <script src="js/script.min.js"></script>
+    <section class="modal modal-buy">
+      <h2 class="modal-buy__title">Купить тур</h2>
+
+      <form class="modal-buy__form" action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data">
+
+        <label class="modal-buy__label">
+          <input class="modal-buy__input modal-buy__input--tel" type="tel" name="tel" placeholder="+ 7 Введите 10 цифр номера" pattern="^[ 0-9]+$">
+        </label>
+
+        <label class="modal-buy__label">
+          <input class="modal-buy__input modal-buy__input--email" type="email" name="email" placeholder="E-mail">
+        </label>
+
+        <button class="button button--special modal-buy__submit" type="submit">Отправить</button>
+      </form>
+      <button class="modal__close" type="button" aria-label="Закрыть"></button>
+    </section>
+
+    <div class="modal modal-success">
+      <p class="modal-success__text">Форма успешно отправлена,<br> спасибо!:)</p>
+      <button class="modal__close" type="button" aria-label="Закрыть"></button>
+    </div>
+
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -1,7 +1,7 @@
 {
-  "name": "skoropistsev_euro-trip",
+  "name": "way",
   "private": true,
-  "description": "Грейдирование от HTML Academy",
+  "description": "Сайт по продаже туров в Европу",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.2.5",

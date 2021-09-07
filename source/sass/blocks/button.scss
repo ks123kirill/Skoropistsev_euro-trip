@@ -7,10 +7,12 @@
   text-align: center;
   border: none;
   box-sizing: border-box;
+  cursor: pointer;
 
   &--special {
     font-size: 12px;
     line-height: 15px;
+    letter-spacing: 2px;
     color: var(--basic-white);
     background-color: var(--basic-orange);
   }
@@ -23,6 +25,11 @@
 @media (max-width: $desktop-width - 1px) {
   .button {
     font-weight: 500;
+
+    &--special {
+      font-size: 10px;
+      line-height: 12px;
+    }
   }
 }
 ///////////

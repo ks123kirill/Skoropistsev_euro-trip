@@ -2,8 +2,6 @@
   text-align: left;
   padding-left: 40px;
   border-right: 1px solid var(--special-grey-lighten);
-  // outline: 5px solid aquamarine;
-  // outline-offset: -5px;
 }
 
 .contacts__heading {
@@ -38,7 +36,7 @@
 
 .contacts__link-img {
   color: var(--special-grey-lighten);
-  padding-right: 15px;
+  margin-right: 15px;
 }
 
 @media (max-width: $desktop-width - 1px) {

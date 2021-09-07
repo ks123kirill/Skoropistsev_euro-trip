@@ -33,6 +33,10 @@
   box-sizing: border-box;
   margin-bottom: 25px;
 
+  &--phone {
+    margin-right: 20px;
+  }
+
   &::placeholder {
     font-weight: 400;
     font-size: 14px;
@@ -41,8 +45,8 @@
     padding-left: 15px;
   }
 
-  &--phone {
-    margin-right: 20px;
+  &:invalid {
+    border-color: var(--basic-orange);
   }
 }
 
